@@ -35,8 +35,6 @@ body, html{
     font-size: 20px;
     font-weight: 500;
 }
-nav ul li{
-}
 nav ul li:nth-of-type(1), nav ul li:nth-of-type(2), nav ul li:nth-of-type(3){
     border-bottom: 2px solid #fff;
     animation: nav-bor-anim 1.5s ease-in;
@@ -65,64 +63,77 @@ header h1{
 header p{
     line-height: 1.4;
 }
+main{
+    display: flex;
+    align-items: center;
+}
 section{
     height: 500px;
     display: flex;
-    align-items: center;
 }
 article{
     height: 100%;
     width: 400px;
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(224, 224, 224);
     transform: skew(10deg, 10deg) rotate(-10deg);
     margin: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
-img:nth-of-type(1){
+.com{
     position: absolute;
     left: 750px;
     width: 400px;
 }
-img:nth-of-type(2){
+.men{
     position: absolute;
     left: 1200px;
     width: 280px;
     filter: saturate(150%);
 }
-img:nth-of-type(3){
+.coup{
     position: absolute;
     left: 1600px;
     width: 400px;
 }
-article:nth-child(1) a div{
+section:nth-child(1) article a div{
     height: 50px;
     width: 400px;
     background-color: rgb(255, 100, 73);
 }
-article:nth-child(2) a div{
+section:nth-child(2) article a div{
     height: 50px;
     width: 400px;
     background-color: rgb(91, 196, 77);
 }
-article:nth-child(3) a div{
+section:nth-child(3) article a div{
     height: 50px;
     width: 400px;
     background-color: rgb(252, 190, 55);
 }
-section>a:nth-of-type(1){
+section:nth-of-type(1)>a{
     position: absolute;
     top: 560px;
     left: 970px;
 }
-section>a:nth-of-type(2){
+section:nth-of-type(2)>a{
     position: absolute;
     top: 560px;
     left: 1420px;
 }
-section>a:nth-of-type(3){
+section:nth-of-type(3)>a{
     position: absolute;
     top: 560px;
     left: 1860px;
+}
+section:hover>article{
+    background-color: rgb(181, 180, 255);
+}
+section:hover>img{
+    transform: scale(1.1);
+    filter: saturate(120%);
+}
+section:hover>article>a>div{
+    transform: scale(1.1);
 }

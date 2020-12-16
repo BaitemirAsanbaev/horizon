@@ -13,13 +13,14 @@ body, html{
     display: flex;
 }
 .container{
-    max-height: 1000px;
+    max-height: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: auto 0;
     background-color: rgb(109, 76, 228);
     padding: 10px;
+    width: 2000px;
 }
 nav ul li a{
     color: #fff;
@@ -49,4 +50,17 @@ header h1{
 }
 header p{
     line-height: 1.4;
+}
+section{
+    height: 500px;
+}
+article:first-of-type{
+    height: 100%;
+    width: 400px;
+    background-color: rgb(226, 226, 226);
+    transform: skew(10deg, 10deg) rotate(-10deg);
+}
+img{
+    position: relative;
+    bottom: 500px;
 }

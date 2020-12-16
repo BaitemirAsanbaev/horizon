@@ -80,6 +80,16 @@ article{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    transition: background-color .5s;
+}
+section img{
+    transition: transform .5s;
+}
+section article a div{
+    transition: transform .5s;
+}
+section>a{
+    transition: font-size .5s;
 }
 .com{
     position: absolute;
@@ -136,4 +146,7 @@ section:hover>img{
 }
 section:hover>article>a>div{
     transform: scale(1.1);
+}
+section:hover>a{
+    font-size: 24px;
 }

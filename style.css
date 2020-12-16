@@ -21,7 +21,7 @@ body, html{
     padding: 10px;
     width: 5000px;
 }
-nav ul li a{
+.links{
     color: #fff;
     text-decoration: none;
     font-size: 20px;
@@ -91,5 +91,20 @@ article:nth-child(2) a div{
 article:nth-child(3) a div{
     height: 50px;
     width: 400px;
-    background-color: rgb(255, 252, 71);
+    background-color: rgb(252, 190, 55);
+}
+section>a:nth-of-type(1){
+    position: absolute;
+    top: 560px;
+    left: 970px;
+}
+section>a:nth-of-type(2){
+    position: absolute;
+    top: 560px;
+    left: 1420px;
+}
+section>a:nth-of-type(3){
+    position: absolute;
+    top: 560px;
+    left: 1860px;
 }

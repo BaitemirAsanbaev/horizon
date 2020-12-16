@@ -6,3 +6,14 @@
 body{
     margin: 0px;
 }
+body, html{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+section:first-of-type{
+    margin-bottom: auto;
+}
+section:last-of-type{
+    margin-top: auto;
+}

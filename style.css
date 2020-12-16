@@ -74,7 +74,7 @@ section{
 article{
     height: 100%;
     width: 400px;
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(255, 255, 255);
     transform: skew(10deg, 10deg) rotate(-10deg);
     margin: 0 20px;
     display: flex;
@@ -124,17 +124,17 @@ section:nth-child(3) article a div{
 }
 section:nth-of-type(1)>a{
     position: absolute;
-    top: 560px;
+    top: 600px;
     left: 970px;
 }
 section:nth-of-type(2)>a{
     position: absolute;
-    top: 560px;
+    top: 600px;
     left: 1420px;
 }
 section:nth-of-type(3)>a{
     position: absolute;
-    top: 560px;
+    top: 600px;
     left: 1860px;
 }
 section:hover>article{
@@ -145,7 +145,7 @@ section:hover>img{
     filter: saturate(120%);
 }
 section:hover>article>a>div{
-    transform: scale(1.1);
+    transform: scale(1.1) skew(-15deg, -15deg) rotate(15deg);
 }
 section:hover>a{
     font-size: 24px;
